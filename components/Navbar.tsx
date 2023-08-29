@@ -12,7 +12,7 @@ const Navbar = () => {
           <Image className="object-contain" src="/logo.svg" alt="Car Store" width={118} height={18} />
         </Link>
         {/* signIn btn */}
-        <Button title="Sighn In" btnType={"button"} containerStyles="text-primary-blue rounded-full bg-white min-w-[130px]" />
+        <Button title="Sign In" btnType={"button"} containerStyles="text-primary-blue rounded-full bg-white min-w-[130px]" />
       </nav>
     </header>
   );
