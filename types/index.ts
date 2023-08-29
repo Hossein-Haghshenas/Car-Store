@@ -35,10 +35,3 @@ export interface CarDetailsProps {
   closeModal: () => void;
   car: CarProps;
 }
-
-export interface CustomFilterTypes {
-  title: string;
-}
-export interface SearchBarTypes {
-  title: string;
-}
