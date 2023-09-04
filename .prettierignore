@@ -1,0 +1,6 @@
+**/.next
+**/package.json
+**/.git
+**/node_modules
+yarn.lock
+**/.gitignore
