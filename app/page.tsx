@@ -7,7 +7,11 @@ import { FilterProps } from "@/types";
 // Constants
 import { fuels, yearsOfProduction } from "@/constants";
 
-export default async function Home({ searchParams }: { searchParams: FilterProps }) {
+export default async function Home({
+  searchParams,
+}: {
+  searchParams: FilterProps;
+}) {
   // fetch cars data
   const allCars = await fetchCars({
     manufacturer: searchParams.manufacturer || "",
@@ -44,13 +48,14 @@ export default async function Home({ searchParams }: { searchParams: FilterProps
           // show cars
           <section>
             <div className="home__cars-wrapper">
-              {allCars?.map((car) => (
-                <CarCard car={car} />
-              ))}
+              {allCars?.map((car) => <CarCard car={car} />)}
             </div>
 
             {/* pagination btn */}
-            <ShowMore pageNumber={(searchParams.limit || 10) / 10} isNext={(searchParams.limit || 10) > allCars.length} />
+            <ShowMore
+              pageNumber={(searchParams.limit || 10) / 10}
+              isNext={(searchParams.limit || 10) > allCars.length}
+            />
           </section>
         ) : (
           // show a message for no result

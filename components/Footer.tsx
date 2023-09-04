@@ -10,7 +10,13 @@ const Footer = () => {
       <div className="flex max-md:flex-col flex-wrap justify-between gap-5 sm:px-16 px-6 py-10">
         <div className="flex flex-col justify-start items-start gap-6">
           {/* logo */}
-          <Image className="object-contain" src="/logo.svg" alt="Car Store" width={118} height={18} />
+          <Image
+            className="object-contain"
+            src="/logo.svg"
+            alt="Car Store"
+            width={118}
+            height={18}
+          />
           {/* copyright */}
           <p className="text-base text-gray-700">
             Car Store 2023 <br />
@@ -23,7 +29,11 @@ const Footer = () => {
             <div key={link.title} className="footer__link">
               <h3 className="font-bold">{link.title}</h3>
               {link.links.map((item) => (
-                <Link key={item.title} href={item.url} className="text-gray-500">
+                <Link
+                  key={item.title}
+                  href={item.url}
+                  className="text-gray-500"
+                >
                   {item.title}
                 </Link>
               ))}

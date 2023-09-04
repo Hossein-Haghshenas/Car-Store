@@ -9,4 +9,15 @@ import CarCard from "./CarCard";
 import CarDetails from "./CarDetails";
 import ShowMore from "./ShowMore";
 
-export { Hero, Button, SearchBar, SearchManufacturer, CustomFilter, CarCard, CarDetails, ShowMore, Navbar, Footer };
+export {
+  Hero,
+  Button,
+  SearchBar,
+  SearchManufacturer,
+  CustomFilter,
+  CarCard,
+  CarDetails,
+  ShowMore,
+  Navbar,
+  Footer,
+};

@@ -23,7 +23,14 @@ const ShowMore = ({ pageNumber, isNext }: ShowMoreProps) => {
   return (
     <div className="w-full flex-center gap-5 mt-10">
       {/* check if it's not last page then show see more btn */}
-      {!isNext && <Button title="Show More" btnType="button" containerStyles="bg-primary-blue rounded-full text-white" onClick={handleNavigation} />}
+      {!isNext && (
+        <Button
+          title="Show More"
+          btnType="button"
+          containerStyles="bg-primary-blue rounded-full text-white"
+          onClick={handleNavigation}
+        />
+      )}
     </div>
   );
 };
